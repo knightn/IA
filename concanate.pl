@@ -5,3 +5,5 @@
 
 conc([], L, L) :- !.                       % base case
 conc([H|T], L2, [H|R]) :- conc(T, L2, R).  % recursive case
+
+conc([1, 2], [3, 4], R).
