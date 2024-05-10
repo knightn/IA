@@ -9,3 +9,5 @@ conc([H|T], L2, [H|R]) :- conc(T, L2, R).  % recursive case
 reverse([], []) :- !.                      % base case
 reverse([H|T], R) :- reverse(T, RT),       % recursive case
                      conc(RT, [H], R). 
+
+                     reverse([1,2,3], R)
