@@ -11,3 +11,5 @@ reverse([H|T], R) :- reverse(T, RT),       % recursive case
                      conc(RT, [H], R).
 
 palindrome(L) :- reverse(L, L).
+
+palindrome([1,2,3,2,1]).
