@@ -6,3 +6,5 @@
 sumlist([], 0).                            % base case
 sumlist([H|T], S) :- sumlist(T, S1),       % recursive case
                      S is H + S1.
+
+                     sumlist([1,2,3], S)
