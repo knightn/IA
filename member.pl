@@ -5,3 +5,5 @@
 
 memb(X, [X|_]) :- !.                 % base case
 memb(X, [_|L]) :- memb(X, L).   % recursive case
+
+memb(e, [b,c,d,a]).
